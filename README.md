@@ -9,7 +9,7 @@ I often use it after [httprobe](https://github.com/tomnomnom/httprobe) or other 
 When you have a large scope of URLs to test you need to know if you get **redirected** or if you found a **legitimate** URL. This tool helps you to find low hanging fruits by displaying the HTTP code and the Web page title (e.g. admin portal, etc.).
 
 ```bash
-python3 httpq.py -h
+$ python3 httpq.py -h
 usage: httpq.py [-h] [-r] [-t TIMEOUT] domains
 
 Check HTTP(S) Status Code for Domain(s).
