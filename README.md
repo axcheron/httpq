@@ -8,13 +8,12 @@ I often use it after [httprobe](https://github.com/tomnomnom/httprobe) or other 
 
 When you have a large scope of URLs to test you need to know if you get **redirected** or if you found a **legitimate** URL. This tool helps you to find low hanging fruits by displaying the HTTP code and the Web page title (e.g. admin portal, etc.).
 
-**Note: ç
-** You need to have a list prepended with the protocol, like **http://** or **https://**.
+**Note:** You need to have a list prepended with the protocol, like **http://** or **https://**.
 
 Here is a quick example without redirection:
 
 ```bash
-python3 httpq.py sample.txt 
+$ python3 httpq.py sample.txt 
 [+] https://www.google.com/ - 200 (OK) - Google
 [+] https://www.youtube.com/ - 200 (OK) - YouTube
 [+] https://careers.google.com/ - 200 (OK) - Build for Everyone - Google Careers
@@ -23,7 +22,7 @@ python3 httpq.py sample.txt
 
 Here is another example with redirection:
 ```bash
-➜  httpq git:(master) ✗ python3 httpq.py sample.txt -r
+$ python3 httpq.py sample.txt -r
 [+] https://www.google.com/ - 200 (OK) - Google
 [+] https://www.youtube.com/ - 200 (OK) - YouTube
 [+] https://careers.google.com/ - 200 (OK) - Build for Everyone - Google Careers
